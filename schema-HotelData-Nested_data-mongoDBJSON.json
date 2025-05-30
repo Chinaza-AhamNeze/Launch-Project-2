@@ -1,0 +1,158 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "check_in_date",
+      "check_out_date",
+      "cleanliness_state",
+      "guest",
+      "is_occupied",
+      "payment",
+      "reservation_id",
+      "room"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "check_in_date": {
+        "bsonType": "string"
+      },
+      "check_out_date": {
+        "bsonType": "string"
+      },
+      "cleanliness_state": {
+        "bsonType": "string"
+      },
+      "guest": {
+        "bsonType": "object",
+        "properties": {
+          "address": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "email": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "first_name": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "guest_id": {
+            "bsonType": "double"
+          },
+          "last_name": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "membership_status": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "phone": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          }
+        },
+        "required": [
+          "address",
+          "email",
+          "first_name",
+          "guest_id",
+          "last_name",
+          "membership_status",
+          "phone"
+        ]
+      },
+      "is_occupied": {
+        "bsonType": "bool"
+      },
+      "payment": {
+        "bsonType": "object",
+        "properties": {
+          "amount": {
+            "bsonType": "int"
+          },
+          "payment_date": {
+            "bsonType": "string"
+          },
+          "payment_id": {
+            "bsonType": "double"
+          },
+          "payment_method": {
+            "bsonType": "string"
+          },
+          "payment_status": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "payment_date",
+          "payment_id",
+          "payment_method",
+          "payment_status"
+        ]
+      },
+      "reservation_id": {
+        "bsonType": "int"
+      },
+      "room": {
+        "bsonType": "object",
+        "properties": {
+          "accessibility_accomodation": {
+            "bsonType": [
+              "string",
+              "double"
+            ]
+          },
+          "availability": {
+            "bsonType": "string"
+          },
+          "capacity": {
+            "bsonType": "int"
+          },
+          "last_maintenance_date": {
+            "bsonType": "string"
+          },
+          "number": {
+            "bsonType": "int"
+          },
+          "room_id": {
+            "bsonType": "int"
+          },
+          "room_type": {
+            "bsonType": "string"
+          },
+          "view_type": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "accessibility_accomodation",
+          "availability",
+          "capacity",
+          "last_maintenance_date",
+          "number",
+          "room_id",
+          "room_type",
+          "view_type"
+        ]
+      }
+    }
+  }
+}
